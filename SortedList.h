@@ -31,7 +31,7 @@ public:
   //       item's key, then the function returns true.
   // 	     otherwise it will return false. List is unchanged.
 
-  void PutItem(T item);
+  void AddItem(T item);
   // Function: Adds item to list.
   // Pre:  List has been initialized.
   //       List is not full.
@@ -57,13 +57,13 @@ public:
   //       item is a copy of element at current position.
 
 private:
-  struct NodeT {
+  struct Node {
       T info;
-      NodeT* next;
+      Node* next;
   };
 
   int length;
-  NodeT* head;
+  Node* head;
 };
 
 #include "SortedList.cpp"

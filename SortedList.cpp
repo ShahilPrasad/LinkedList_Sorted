@@ -1,5 +1,8 @@
 
 #include "SortedList.h"
+/*
+ *
+ */
 
 
 template<class T>
@@ -28,8 +31,11 @@ bool SortedList<T>::Contains(T someItem) {
 }
 
 template<class T>
-void SortedList<T>::PutItem(T item) {
+void SortedList<T>::AddItem(T item) {
 
+    for (int i = 0; i<length; i++){
+        if(item <info[i])
+    }
 }
 
 template<class T>
